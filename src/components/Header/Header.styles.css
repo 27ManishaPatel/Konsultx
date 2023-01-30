@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+.header-component{
+  background-color:  rgb(225, 229, 231, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.headerLogo{
+  width: 500px;
+}
+
+.nav-container ul{
+  display: flex;
+  align-items: center;
+  position: sticky;
+ 
+}
+.nav-container ul li{
+list-style: none;
+margin: 10px 30px; 
+font-size: 25px;
+}
+.nav-list{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+
+}

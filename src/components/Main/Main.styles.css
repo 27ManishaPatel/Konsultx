@@ -1,0 +1,18 @@
+.image-wrapper{
+  width: 100%;
+}
+.main-div{
+  height: 800px;
+}
+.main--content-container{
+  margin-left: 200px;
+  margin-top: 200px;
+  text-align: left;
+}
+.main-heading{
+font-size: 100px;
+margin-bottom: 30px;
+}
+.main-content{
+  font-size: 25px;
+}

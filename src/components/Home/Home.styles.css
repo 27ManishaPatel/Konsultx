@@ -1,0 +1,10 @@
+.homepage-container{
+  margin: auto;
+  border: 1px solid black;
+}
+.navigation{
+  background-image: url('../../assets/wrapper4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
