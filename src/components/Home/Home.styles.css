@@ -3,8 +3,24 @@
   border: 1px solid black;
 }
 .navigation{
-  background-image: url('../../assets/wrapper4.jpg');
+  background-image: url('../../assets/wrapper6.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover; 
+}
+.testimonial{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+.testimonial h3{
+  font-size: 50px;
+  margin-top: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.testimonial p{
+  font-size: 22px;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+  line-height: 30px;
 }

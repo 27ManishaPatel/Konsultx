@@ -1,3 +1,10 @@
+.client-wrapper{
+  background-image: url('../../assets//client2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-blend-mode: darken;
+  background-color: rgb(225, 229, 231);
+}
 .clients-heading{
   text-align: center;
   margin: 40px;
@@ -20,4 +27,5 @@
   text-align: center;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px rgb(162, 188, 200);
+  background-color:  rgb(225, 229, 231, 0.5);
 }

@@ -14,6 +14,14 @@ const Home = () => {
          <Header/>
           <Main />
         </div>
+        <div className='testimonial'>
+          <h3>Testimonials</h3>
+          <p>Itaque primos congressus copulationesque et 
+            consuetudinum instituendarum voluntates fieri propter voluptatem;
+             Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. 
+            Quare obscurentur etiam haec, quae secundum naturam ess.</p>
+        
+        </div>
         <div>
           <Footer />
         </div>

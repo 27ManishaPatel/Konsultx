@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 .header-component{
-  background-color:  rgb(225, 229, 231, 0.4);
+  /* background-color:  rgb(225, 229, 231, 0.4); */
+  background-color:rgb(27, 113, 174, 0.7); 
+  /* background-color:rgba(23, 45, 218, 0.7);  */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 40px;
+  
 }
 .headerLogo{
   width: 500px;
@@ -20,6 +23,7 @@
 list-style: none;
 margin: 10px 30px; 
 font-size: 25px;
+
 }
 .nav-list{
   text-decoration: none;
@@ -27,5 +31,24 @@ font-size: 25px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
-
+  color: rgb(252, 241, 241);
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.nav-list:hover {
+  background-size: 0 3px, 100% 3px;
 }
