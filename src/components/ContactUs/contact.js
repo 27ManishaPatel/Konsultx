@@ -1,4 +1,4 @@
-import React, {  useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Header from "../Header/Header.component";
 import Footer from "../Footer/Footer.component";
@@ -7,23 +7,49 @@ import emailIcon from '../../assets/icons/email.png';
 import contactImage from '../../assets/contactUs.jpg';
 import website from '../../assets/icons/website.png';
 import linkedln from '../../assets/icons/linkedln2.png';
-// import Modal from "../Modal/Modal.component";
+import Modal from "../Modal/Modal.component";
 
 
 const ContactUs = () => {
+  const [formValue, setFormValue] = useState({ name: '', email: '', message: '' });
+  const [formError, setFormError] = useState({});
+  const [isSubmit, setSubmit] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleValidation = (e) => {
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+  }
 
-    emailjs.sendForm('service_gowpr28', 'template_3xsq363', form.current, '2HO0CR_39dcdX0mcN')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormError(validationForm(formValue));
+    setSubmit(true);
+    setOpenModal(true);
+  }
+
+  const validationForm = (value) => {
+    const errors = {};
+    const emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!value.name) {
+      errors.name = "* Please Enter Name";
+    }
+
+    if (!value.email) {
+      errors.email = "* Please Enter Email";
+    } else if (!emailPattern.test(value.email)) {
+      errors.email = "* Enter Valid Email";
+    }
+    return errors;
+  }
+  useEffect(() => {
+    if (Object.keys(formError).length === 0 && isSubmit) {
+      console.log(formValue);
+    }
+  }, [formError, formValue, isSubmit]);
 
   return (
     <div className="contact-container">
@@ -39,24 +65,28 @@ const ContactUs = () => {
             <span className="konsultx-span">konsultx@gmail.com</span>
           </div>
           <p className="contact-us-para">-OR-</p>
-          <form ref={form} onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit}>
             <div>
               <input
                 className="form-input"
                 placeholder="Full Name"
                 type="text"
-                name="from_name"
+                name="name"
+                value={formValue.name}
+                onChange={handleValidation}
               />
-              <span className="text-danger"> </span>
+              <span className="text-danger">{formError.name}  </span>
             </div>
             <div>
               <input
                 className="form-input"
                 placeholder="Email"
                 type="email"
-                name="from_email"
+                name="email"
+                value={formValue.email}
+                onChange={handleValidation}
               />
-              <span className="text-danger">  </span>
+              <span className="text-danger">{formError.email}  </span>
             </div>
 
             <textarea
@@ -64,16 +94,23 @@ const ContactUs = () => {
               className="form-input form-textarea"
               placeholder="Message"
               type="text"
-              name="message"  
+              name="message"
+              value={formValue.message}
+              onChange={handleValidation}
             ></textarea>
             <button
               className="contactUs-btn"
               type="submit"
-              value="Send" 
+              onClick={handleSubmit}
             >
               Send Message
             </button>
-        
+          
+                <Modal
+                  title="Your message has been sent!"
+                  open={openModal}
+                  toggle={() => setOpenModal(false)}
+                />
           </form>
           <h3>Follow or connect with us</h3>
           <div className="media-icons">

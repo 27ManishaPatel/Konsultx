@@ -1,16 +1,20 @@
 
 .footer-container{
+  padding-top: 80px ;
+  background-color: rgb(27, 113, 174) ;
+}
+.footer-content{
+  margin: auto;
+  width: 1400px;
   display: flex;
   flex-direction: column;
-  padding-top: 80px ;
   justify-content: center;
   align-items: center;
-  background-color: rgb(27, 113, 174) ;
 }
 .footer-logo-container{
   margin-bottom: 20px;
   border-bottom: 1px solid white;
-  width: 70%;
+  width: 80%;
 }
 
 .footer-logo{
@@ -26,13 +30,17 @@
 }
 .footer-info ul li{
   list-style: none;
-  padding: 10px 40px;
+  padding: 10px 50px;
   color: white;
-  font-size: 25px;
+  font-size: 28px;
+}
+.link{
+  text-decoration: none;
+  color: white;
 }
 .icon{
-  width: 25px;
-  margin: 10px;
+  width: 28px;
+  margin: 15px;
   color: white;
   background-color: white;
   padding: 5px;
@@ -43,8 +51,79 @@
   align-items: center;
 }
 .copyright-para{
+  text-align: center;
   color: white;
   margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .footer-container{
+    padding-top: 50px ;
+  }
+  .footer-content{
+    margin: auto;
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-logo-container{
+    margin-bottom: 15px;
+    width: 40%;
+    border: none;
+  }
+  .footer-logo{
+    width: 300px;
+    padding-bottom: 30px;
+  }
+  .footer-info ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-info ul li{
+    padding: 5px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px){
+  .footer-container{
+    padding-top: 30px ;
+  }
+  .footer-content{
+    margin: auto;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-logo-container{
+    width: 70%;
+    border-bottom: 1px solid white;
+  }
+  .footer-logo{
+    width: 200px;
+    padding-bottom: 20px;
+  }
+  .footer-info ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-info ul li{
+  padding: 5px;
+    font-size: 20px;
+  }
+  .icon{
+    width: 22px;
+    margin:5px 10px;
+    padding: 3px;
+  }
+  .copyright-para{
+    margin-top: 30px;
+    font-size: 18px;
+  }
 }

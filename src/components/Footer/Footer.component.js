@@ -9,40 +9,57 @@ import email from '../../assets/icons/email.png';
 import './Footer.styles.css'
 
 const Footer = () => {
+  function Mailto({ email, subject, body, ...props }) {
+    return (
+      <a className='link' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+        {props.children}
+      </a>
+    );
+  }
   return (
     <footer className='footer-container'>
-      <div className='footer-logo-container'>
-        <img src={logo} alt='logo' className='footer-logo' />
-      </div>
-      <div className='footer-info'>
-        <ul>
-          <li className='list-item'><img
-            className="icon"
-            src={phone}
-            alt="Facebook"
-          />21728053
-          </li>
-          <li className='list-item'><img
-            className="icon"
-            src={email}
-            alt="Facebook"
-          />info@konsultx.dk
-          </li>
-          <li className='list-item'>
-            <img
+      <div className='footer-content'>
+        <div className='footer-logo-container'>
+          <img src={logo} alt='logo' className='footer-logo' />
+        </div>
+        <div className='footer-info'>
+          <ul>
+            <li className='list-item'>
+              <img
+                className="icon"
+                src={phone}
+                alt="phone"
+              />
+              <a className='link' href="tel:+4521728053">
+                21728053
+              </a>
+            </li>
+            <li className='list-item'><img
               className="icon"
-              src={location}
-              alt="Facebook"
-            />Snogegårdsvej 86, Søborg, Denmark
-          </li>
-          <li className='list-item'>
-            <img
-              className="icon"
-              src={linkedln}
-              alt="Facebook"
-            />Follow Us
-          </li>
-        </ul>
+              src={email}
+              alt="email"
+            />
+              <Mailto email="info@konsultx.dk" subject="Hello" body="Hello konsultx!">
+                info@konsultx.dk
+              </Mailto>
+
+            </li>
+            <li className='list-item'>
+              <img
+                className="icon"
+                src={location}
+                alt="location"
+              />Søborg, Denmark
+            </li>
+            <li className='list-item'>
+              <img
+                className="icon"
+                src={linkedln}
+                alt="linkedln"
+              />Follow Us
+            </li>
+          </ul>
+        </div>
       </div>
       <p className='copyright-para'>Copyright © All Rights Reserved</p>
     </footer>

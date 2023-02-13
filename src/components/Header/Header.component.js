@@ -6,6 +6,7 @@ import './Header.styles.css';
 const Header = () => {
   return (
     <header className="header-component">
+      <div className='header-content'>
       <div className="header-image">
         <img src={imageHeader} className="headerLogo" alt="Header" />
       </div>
@@ -18,6 +19,8 @@ const Header = () => {
         </ul>
         <Outlet />
       </div>
+      </div>
+      
     </header>
   );
 };
