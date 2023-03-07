@@ -4,18 +4,13 @@ import linkedln from '../../assets/icons/linkedln.png';
 import location from '../../assets/icons/location.png';
 import phone from '../../assets/icons/phone.png';
 import email from '../../assets/icons/email.png';
+import Mailto from '../Mailto/Mailto';
 
 
 import './Footer.styles.css'
 
 const Footer = () => {
-  function Mailto({ email, subject, body, ...props }) {
-    return (
-      <a className='link' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
-        {props.children}
-      </a>
-    );
-  }
+ 
   return (
     <footer className='footer-container'>
       <div className='footer-content'>
@@ -31,7 +26,7 @@ const Footer = () => {
                 alt="phone"
               />
               <a className='link' href="tel:+4521728053">
-                21728053
+                +45 21728053
               </a>
             </li>
             <li className='list-item'><img

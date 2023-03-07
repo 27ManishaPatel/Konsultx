@@ -58,11 +58,12 @@ font-weight: 500;
   margin-bottom: 30px;
 }
 .about-partner-para{
+  font-family: sans-serif;
+  opacity: 0.8;
   font-size: 24px;
   margin-bottom: 10px;
   text-align: left;
   line-height: 35px;
-  text-align: justify;
 }
 .partners-info{
   border: 1px solid black;
@@ -157,6 +158,6 @@ font-weight: 500;
   }
   .about-partner-para{
    margin: 10px;
-    font-size: 20px;
+  font-size: 20px;
   }
 }

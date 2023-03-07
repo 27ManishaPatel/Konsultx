@@ -1,16 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Main.styles.css';
-// import SAP from '../../assets/SAP.jpg'
+import Vivus from 'vivus';
 
 const Main =()=>{
+  useEffect(() => {
+    new Vivus('main-title', {duration:200, file:'svg/main-title_animated.svg'})
+  }, [])
   return (
     <div className="main-div">
       <div className="main--content-container">
-      <h1 className="main-heading">Strategy <br></br>consulting</h1>
-    <p className="main-content">Duis aute irure dolor in reprehenderit in voluptate velit esse<br></br>
-     cillum dolore eu fugiat nulla pariatur. Excepteur 
-      sint occaecat <br></br>
-      cupidatat non proident.</p>
+      <div id='main-title' className="main-heading"></div>
+    <p className="main-content">We specialize in SAP Consulting with special focus on Accounts Payable process optimization and reducing 
+    the cost per transaction for the AP Process.</p>
       </div>
     </div>
   )

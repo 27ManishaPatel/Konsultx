@@ -48,3 +48,16 @@
   flex-direction: column;
   gap: 30px;
 }
+
+@media screen and (max-width: 481px){
+  
+  .modal-container {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .modal-wrapper h2 {
+    font-size: 18px;
+  }
+
+}

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/Header.component";
 import Footer from "../Footer/Footer.component";
 import aboutLogo from '../../assets/mainwrapper.jpg';
-import './About.styles.css'
+import './About.styles.css';
 const About = () => {
   return (
     <div>
@@ -26,7 +26,7 @@ const About = () => {
 
       <div className="about-partner-container">
         <div className="about-partner-content">
-        <h1 className="about-partner-heading">Our Partner</h1>
+        <h1 className="about-partner-heading">The team</h1>
         <p className="about-partner-para">At KonsultX, we are a team of 3 very experienced VIM / SAP Consultants with approx. 
           50 years of combined SAP experience and more than 20 years of combined VIM experience. 
           We have worked for more than 30 different clients for VIM projects ranging from VIM implementations, rollouts, enhancements and production support etc. 
@@ -34,12 +34,12 @@ const About = () => {
           Business Center, Intelligent Capture for SAP and OpenText Archive Center.
           </p>
         </div>
-        <div className="partners-info">
+        {/* <div className="partners-info">
           <div className="partner-profile">Partner 1</div>
           <div className="partner-profile">Partner 2</div>
           <div className="partner-profile">Partner 3</div>
         </div>
-       
+        */}
       </div>
 
 
