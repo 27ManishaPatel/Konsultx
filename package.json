@@ -1,6 +1,6 @@
 {
-  "name": "konsultx-1",
-  "homepage": "https://27ManishaPatel.github.io/Konsultx",
+  "homepage": "http://27ManishaPatel.github.io/Konsultx",
+  "name": "konsultx",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
