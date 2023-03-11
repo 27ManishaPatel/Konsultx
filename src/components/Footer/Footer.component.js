@@ -52,8 +52,9 @@ const Footer = () => {
                 className="icon"
                 src={linkedln}
                 alt="linkedln"
-              />Follow Us
-              </a>
+              />
+             </a>
+              Follow Us
             </li>
           </ul>
         </div>
