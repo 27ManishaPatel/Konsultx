@@ -47,11 +47,13 @@ const Footer = () => {
               />Søborg, Denmark
             </li>
             <li className='list-item'>
+              <a href="https://www.linkedin.com/in/ashish-bansal-a591437/">
               <img
                 className="icon"
                 src={linkedln}
                 alt="linkedln"
               />Follow Us
+              </a>
             </li>
           </ul>
         </div>
