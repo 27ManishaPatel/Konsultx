@@ -12,15 +12,10 @@
   color: rgb(252, 241, 241);;
 }
 #main-title{
-  width: 400px;
+  width: 35%;
   height: 200px;
   fill: aqua;
-}
-.main-heading{
-width: 30%;
-margin-left: 100px;
-font-size: 100px;
-margin-bottom: 30px;
+  margin-left: 100px;
 }
 .main-content{
   background-color: rgba(8, 9, 9, 0.5);
@@ -41,16 +36,23 @@ margin-bottom: 30px;
     font-size: 25px;
   }
 }
+@media screen and (max-width: 992px) {
+  .main-content{
+    width: 60%; 
+    margin-left: 60px;
+  }
+  #main-title{
+    width: 40%;
+    margin-left: 60px;
+  }
+}
 @media screen and (max-width: 768px) {
   .main-div{
     height: 500px;
   }
   .main--content-container{
-    width: 760px;
+    width: 99%;
     padding-top: 100px;
-  }
-  .main-heading{
-  font-size: 60px;
   }
   .main-content{
     font-size: 22px;
@@ -61,14 +63,8 @@ margin-bottom: 30px;
     height: 300px;
   }
   .main--content-container{
-    width: 460px;
     padding-top: 50px;
     margin-left: 0px;
-  }
-  .main-heading{
-  font-size: 40px;
-  margin-left: 50px;
-  
   }
   .main-content{
     font-size: 18px;

@@ -73,11 +73,11 @@ font-size: 25px;
   }
 }
 @media screen and (max-width: 768px){
+  .header-content{
+    width: 99%;
+  }
   .header-component{
     padding: 30px;
-  }
-  .header-content{
-    width: 760px;
   }
   .headerLogo{
     width: 200px;
