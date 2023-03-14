@@ -8,21 +8,3 @@
   background-repeat: no-repeat;
   background-size: cover; 
 }
-.testimonial{
-  margin: auto;
-  text-align: center;
-  width: 1400px;
-}
-.testimonial h3{
-  font-size: 50px;
-  margin-top: 60px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
-}
-.testimonial p{
-  padding: 0px 40px;
-  font-size: 22px;
-  margin-bottom: 80px;
-  letter-spacing: 2px;
-  line-height: 30px;
-}

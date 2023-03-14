@@ -60,14 +60,19 @@
 }
 @media screen and (max-width: 480px){
   .main-div{
-    height: 300px;
+    height: 100%;
+    padding-bottom: 20px;
   }
   .main--content-container{
     padding-top: 50px;
     margin-left: 0px;
   }
+  #main-title{
+    width: 60%;
+  }
   .main-content{
-    font-size: 18px;
+    font-size: 12px;
     margin-left: 50px;
   }
+
 }
