@@ -9,7 +9,7 @@ const Main =()=>{
   return (
     <div className="main-div">
       <div className="main--content-container">
-      <div id='main-title' className="main-heading"></div>
+      <div id='main-title' ></div>
     <p className="main-content">We specialize in SAP Consulting with special focus on Accounts Payable process optimization and reducing 
     the cost per transaction for the AP Process.</p>
       </div>

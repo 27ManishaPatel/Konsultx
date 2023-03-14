@@ -1,5 +1,6 @@
 .homepage-container{
   margin: auto;
+  width: 100%;
   border: 1px solid black;
 }
 .navigation{
@@ -24,32 +25,4 @@
   margin-bottom: 80px;
   letter-spacing: 2px;
   line-height: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .testimonial{
-    width: 760px;
-  }
-  .testimonial h3{
-    font-size: 40px;
-  }
-  .testimonial p{
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 480px){
-  .testimonial{
-    width: 470px;
-  }
-  .testimonial h3{
-    margin-top: 30px;
-    font-size: 30px;
-  }
-  .testimonial p{
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    line-height: 25px;
-  }
 }

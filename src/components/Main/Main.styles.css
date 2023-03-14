@@ -12,9 +12,8 @@
   color: rgb(252, 241, 241);;
 }
 #main-title{
-  width: 500px;
+  width: 400px;
   height: 200px;
-  overflow: hidden;
   fill: aqua;
 }
 .main-heading{
@@ -30,6 +29,17 @@ margin-bottom: 30px;
   margin-left: 100px;
   font-size: 25px;
   border-radius: 2px;
+}
+@media screen and (max-width: 1200px) {
+  .main-div{
+    height: 700px;
+  }
+  .main--content-container{
+    width: 90%;
+  }
+  .main-content{
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-div{

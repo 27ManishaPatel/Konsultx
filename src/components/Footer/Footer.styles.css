@@ -57,6 +57,23 @@
   padding-bottom: 20px;
   font-size: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .footer-content{
+    margin: auto;
+    width: 90%;
+  }
+  .footer-logo-container{
+    width: 60%;
+  }
+  .footer-logo{
+    width: 300px;
+    padding-bottom: 30px;
+  }
+  .footer-info ul li{
+    padding: 5px;
+    font-size: 22px;
+  }
+}
 
 @media screen and (max-width: 768px){
   .footer-container{

@@ -56,7 +56,22 @@ font-size: 25px;
 .nav-list:hover {
   background-size: 0 3px, 100% 3px;
 }
-
+@media screen and (max-width: 1200px) {
+  .header-content{
+    width: 90%;
+  }
+  .headerLogo{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-content{
+    width: 90%;
+  }
+  .headerLogo{
+    width: 300px;
+  }
+}
 @media screen and (max-width: 768px){
   .header-component{
     padding: 30px;
