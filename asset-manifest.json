@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Konsultx/static/css/main.23098162.css",
+    "main.css": "/Konsultx/static/css/main.39c013f0.css",
     "main.js": "/Konsultx/static/js/main.ff8c529b.js",
     "static/js/787.8e9efe59.chunk.js": "/Konsultx/static/js/787.8e9efe59.chunk.js",
     "static/media/wrapper6.jpg": "/Konsultx/static/media/wrapper6.9a8ef093ce5e1de1897a.jpg",
@@ -8,12 +8,12 @@
     "static/media/logo6.png": "/Konsultx/static/media/logo6.00dad2dff98918770799.png",
     "static/media/contactUs.jpg": "/Konsultx/static/media/contactUs.48bf46d9753519dfb6a0.jpg",
     "index.html": "/Konsultx/index.html",
-    "main.23098162.css.map": "/Konsultx/static/css/main.23098162.css.map",
+    "main.39c013f0.css.map": "/Konsultx/static/css/main.39c013f0.css.map",
     "main.ff8c529b.js.map": "/Konsultx/static/js/main.ff8c529b.js.map",
     "787.8e9efe59.chunk.js.map": "/Konsultx/static/js/787.8e9efe59.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23098162.css",
+    "static/css/main.39c013f0.css",
     "static/js/main.ff8c529b.js"
   ]
 }
