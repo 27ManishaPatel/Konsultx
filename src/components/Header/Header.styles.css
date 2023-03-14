@@ -92,9 +92,6 @@ font-size: 25px;
   .header-content{
     width: 99%;
   }
-  .header-component{
-    padding: 30px;
-  }
   .headerLogo{
     width: 180px;
   }
@@ -107,18 +104,8 @@ font-size: 25px;
   .header-component{
     padding: 5px;
   }
-  .header-content{
-    width: 460px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
   .headerLogo{
-    width: 200px;
-  }
-  .nav-container ul li{
-  margin: 10px 10px; 
-  font-size: 18px;
+    width: 150px;
   }
   .nav-container ul{
     display: flex;
