@@ -12,12 +12,9 @@ const About = () => {
         <div className="about-heading-container">
           <div className="about-content">
             <h1 className="about-heading">About Us.</h1>
-              <p className="about-para">KonsultX is based in Copenhagen, Denmark and we provide SAP Consulting Services with special focus on quality of deliverables and reducing total cost of ownership.
-                {/*There's this notion that to grow a business, 
-              you have to be ruthless. But we know there's a better way to grow. One where what's good for the bottom line is also good for customers.
-               We believe businesses can grow with a conscience, and succeed with a soul — and that they can do it with inbound. 
-                That's why we've created an ecosystem uniting software, education, 
-              and community to help businesses grow better every day.</p> */}
+              <p className="about-para">KonsultX is based in Copenhagen, 
+              Denmark and we provide SAP Consulting Services with special focus on 
+              quality of deliverables and reducing total cost of ownership.
               </p>
           </div>
           <img src={aboutLogo} alt='girl' className="about-image"></img>
@@ -34,15 +31,7 @@ const About = () => {
           Business Center, Intelligent Capture for SAP and OpenText Archive Center.
           </p>
         </div>
-        {/* <div className="partners-info">
-          <div className="partner-profile">Partner 1</div>
-          <div className="partner-profile">Partner 2</div>
-          <div className="partner-profile">Partner 3</div>
-        </div>
-        */}
       </div>
-
-
       <Footer />
     </div>
   )

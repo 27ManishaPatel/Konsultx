@@ -63,7 +63,6 @@ font-weight: 600;
   line-height: 20px;
 }
 .form-input::placeholder {
-
   padding-left: 0;
   color: #212121;
   font-size: 24px;
@@ -72,17 +71,13 @@ font-weight: 600;
   font-family: 'Montserrat';
   background: rgb(196, 224, 238);
 }
-.text-danger{
-  color: #c02222;
-  font-size: 18px;
-}
 .form-textarea{
   height: 100px;
   padding: 10px;
   width: 97%;
 }
 .contactUs-btn {
-  width: 400px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgb(116, 183, 207);
   background: rgb(196, 224, 238);
@@ -108,28 +103,47 @@ h3{
   cursor: pointer;
   margin-right: 23px;
 }
+@media screen and (max-width: 1200px){
+  .contact-us-wrapper{
+    width: 99%;
+    }
+    .contact-us-container{
+      padding: 40px ;
+    }
+    .konsultx-email-icon{
+      width: 40px;
+    }
+}
+@media screen and (max-width: 992px){
+  .contact-us-container{
+    padding: 30px ;
+  }
+  .konsultx-span{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 768px){
   .contact-us-wrapper{
-     margin-left: 0px;
-    width: 760px;
-    display: block;
+    width: 100%;
     }
     .contact-us-image-container{ 
      width: 100%;
-     height: 665px;
-      float: left;
-      position: absolute;
-      box-shadow: 0px 0px 0px 0px gray;
+     height: 85%;
+     float: right;
+     position: absolute;
     }
     .contact-us-image{
       box-shadow: 0px 0px 0px 0px gray;
     }
     .contact-us-container{
-      margin: auto;
       position: relative;
       background-color: rgba(203, 238, 250, 0.6);
       width: 70%;
-      padding: 10px  40px;
+      padding: 10px 40px;
+      margin: 10px 0px;
     }
     .contact-us-heading{
       margin-bottom: 20px;
@@ -159,7 +173,7 @@ h3{
       height: 50px;
     }
     .contactUs-btn {
-      width: 250px;
+      width: 60%;
       height: 40px;
       margin-top: 20px;
     }
@@ -167,15 +181,70 @@ h3{
       font-size: 25px;
     }
 }
+@media screen and (max-width: 600px){
+  .contact-us-image-container{ 
+    height: 99%;
+   }
+   .contact-us-heading{
+    font-size: 30px;
+  }
+  .konsultx-email-icon{
+    width: 30px;
+  }
+  .konsultx-span{
+    font-size: 25px;
+  }
+  .form-input {
+    height: 30px;
+  }
+  .form-input::placeholder {
+    font-size: 20px;
+  }
+  .form-textarea{
+    height: 40px;
+  }
+  .contactUs-btn {
+    width: 60%;
+  }
+  h3{
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 480px){
-  .contact-us-wrapper{
-    margin-left: 0px;
-    width: 460px;
-    display: block;
-    }
-    .contact-us-image-container{ 
-     width: 100%;
-     height: 625px;
-    }
+  .contact-us-image-container{ 
+    height: 120%;
+   }
+   .contact-us-heading{
+    font-size: 25px;
+  }
+  .konsultx-email-icon{
+    width: 25px;
+  }
+  .konsultx-span{
+    font-size: 22px;
+  }
+  .form-input {
+    height: 30px;
+  }
+  .form-input::placeholder {
+    font-size: 20px;
+  }
+  .form-textarea{
+    height: 40px;
+  }
+  .contactUs-btn {
+    width: 60%;
+    font-size: 22px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .media-icons {
+    margin-top: 20px 20px;
+  }
+  .media-icons img {
+    width: 40px;
+    height: 40px;
+  }
     
 }
