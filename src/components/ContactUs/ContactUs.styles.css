@@ -127,17 +127,15 @@ h3{
 }
 @media screen and (max-width: 768px){
   .contact-us-wrapper{
+    background-image: url('../../assets/contactUs.jpg');
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
     }
     .contact-us-image-container{ 
-     width: 100%;
-     height: 78%;
-     float: left;
-     position: absolute;
-    }
-    
+      display: none; 
+    } 
     .contact-us-container{
-      position: relative;
       background-color: rgba(203, 238, 250, 0.6);
       width: 70%;
       padding: 10px 40px;
@@ -183,11 +181,7 @@ h3{
       margin-bottom: 10px;
     }
 }
-@media screen and (max-width: 768px){
-  .contact-us-image-container{ 
-    height: 100%;
-   }
-}
+
 @media screen and (max-width: 480px){
  
    .contact-us-heading{
