@@ -7,7 +7,7 @@ import contactImage from '../../assets/contactUs.jpg';
 import website from '../../assets/icons/website.png';
 import linkedln from '../../assets/icons/linkedln2.png';
 import Mailto from "../Mailto/Mailto";
-import ContactForm from './ContactForm';
+import ContactFormJs from './ContactFormjs';
 // import Modal from "../Modal/Modal.component";
 
 
@@ -31,7 +31,7 @@ const ContactUs = () => {
           </div>
           <p className="contact-us-para">-OR-</p>
 
-          <ContactForm/>
+          <ContactFormJs/>
           <h3>Follow or connect with us</h3>
           <div className="media-icons">
             <img src={website} alt="Website" />
